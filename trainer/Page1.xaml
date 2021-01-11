@@ -1,0 +1,29 @@
+﻿<Page x:Class="trainer.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:trainer"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="900"
+      Title="Page1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" Name="datagrid" IsReadOnly="False" Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"                          Binding="{Binding IDMANUFACTURER}"/>
+                <DataGridTextColumn Header="Название"       Width="0.5*" Binding="{Binding NAME}"/>
+                <DataGridTextColumn Header="Адрес"          Width="0.5*" Binding="{Binding ADDRESS}"/>
+                <DataGridTextColumn Header="Модель"         Width="0.5*" Binding="{Binding SPECIFICATIONS.MODEL}"/>
+                <DataGridTextColumn Header="Номер поставки" Width="0.5*" Binding="{Binding CONSIGNMENT.IDCONSIGMENT}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="w" Content="Редактировать" Width="100" Height="25" Grid.Row="1" Click="w_Click" Margin="357,163,343,37"/>
+        <Button x:Name="q" Content="Удалить"       Width="100" Height="25" Grid.Row="1" Margin="487,163,213,37" Click="q_Click"/>
+        <Button x:Name="e" Content="Добавить"      Width="100" Height="25" Grid.Row="1" Margin="228,163,472,37" Click="e_Click"/>
+    </Grid>
+</Page>

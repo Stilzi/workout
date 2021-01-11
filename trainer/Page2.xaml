@@ -1,0 +1,23 @@
+﻿<Page x:Class="trainer.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:trainer"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="900"
+      Title="Page2">
+
+    <Grid>
+        <Button x:Name="ins"  Content="Добавить" Width="100" Height="25" Margin="346,360,354,64" Click="ins_Click"/>
+        <Button x:Name="back" Content="Назад"    Width="100" Height="25" Click="back_Click" Margin="85,360,615,64"/>
+        <TextBlock Text="Название" FontSize="15" Width="100" Height="25" Margin="396,80,404,694"/>
+        <TextBox x:Name="name" Height="40" Width="300" Margin="279,110,321,650"/>
+        <TextBlock Text="Адрес" FontSize="15" Width="100" Height="25" Margin="396,172,404,602"/>
+        <TextBox x:Name="name2" Height="40" Width="300" Margin="279,202,321,558" />
+        <TextBlock Text="Модель" FontSize="15" Width="100" Height="25" Margin="396,247,404,528"/>
+        <TextBox x:Name="name3" Height="40" Width="300" Margin="279,355,321,405"/>
+        <TextBlock Text="Номер поставки" FontSize="15" Height="25" Margin="374,325,404,450"/>
+        <TextBox x:Name="name4" Height="40" Width="300" Margin="279,277,321,483"/>
+    </Grid>
+</Page>

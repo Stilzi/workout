@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище COMPUTERModelContainer" CdmEntityContainer="COMPUTEREntities">
+    <EntitySetMapping Name="CONSIGNMENT">
+      <EntityTypeMapping TypeName="COMPUTERModel.CONSIGNMENT">
+        <MappingFragment StoreEntitySet="CONSIGNMENT">
+          <ScalarProperty Name="IDCONSIGMENT" ColumnName="IDCONSIGMENT" />
+          <ScalarProperty Name="BATCHSIZE" ColumnName="BATCHSIZE" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRIBUTOR">
+      <EntityTypeMapping TypeName="COMPUTERModel.DISTRIBUTOR">
+        <MappingFragment StoreEntitySet="DISTRIBUTOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MANUFACTURER">
+      <EntityTypeMapping TypeName="COMPUTERModel.MANUFACTURER">
+        <MappingFragment StoreEntitySet="MANUFACTURER">
+          <ScalarProperty Name="IDMANUFACTURER" ColumnName="IDMANUFACTURER" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="SPECIFICATIONSID" ColumnName="SPECIFICATIONSID" />
+          <ScalarProperty Name="CONSIGMENTID" ColumnName="CONSIGMENTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPECIFICATIONS">
+      <EntityTypeMapping TypeName="COMPUTERModel.SPECIFICATIONS">
+        <MappingFragment StoreEntitySet="SPECIFICATIONS">
+          <ScalarProperty Name="MANUFACTURERID" ColumnName="MANUFACTURERID" />
+          <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+          <ScalarProperty Name="CPU" ColumnName="CPU" />
+          <ScalarProperty Name="FREQUENCY" ColumnName="FREQUENCY" />
+          <ScalarProperty Name="RAM" ColumnName="RAM" />
+          <ScalarProperty Name="HardDiskSpace" ColumnName="HardDiskSpace" />
+          <ScalarProperty Name="RELEASEdATE" ColumnName="RELEASEdATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
